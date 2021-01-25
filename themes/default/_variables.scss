@@ -25,13 +25,20 @@ $grid-breakpoints: (
 
 $default-font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
 
+// Base colors
+//
+// It's not recommended to change this colors because white is white and black is... black :)
+$color-white: #fff !default;
+$color-light-grey: #dddddd !default;
+$color-black: #000 !default;
+$color-teal: #7ff0ea !default;
+
 // Colors
 //
 
-$color-primary: #c6e3fa;
-$color-primary-light: #f6fbff;
-$color-primary-dark: #6ea9d7;
-$color-primary-dark: #6EAAD8;
+$color-primary: $color-light-grey;
+$color-primary-light: $color-teal;
+$color-primary-dark: $color-black;
 
 $color-secondary: #91ECEC;
 $color-secondary-light: #C2F9F9;
@@ -45,12 +52,6 @@ $color-text: rgba(0, 0, 0, .87) !default; // #212121
 $color-text-medium: rgba(0, 0, 0, .60) !default; // #666666
 $color-text-disabled: rgba(0, 0, 0, .38) !default; // #9e9e9e
 $color-text-inverted: invert($color-text); 
-
-// Base colors
-//
-// It's not recommended to change this colors because white is white and black is... black :)
-$color-white: #fff !default;
-$color-black: #000 !default;
 
 $default-bg-color: $color-white !default;
 
@@ -189,7 +190,7 @@ $button-attachment-bg-color: $button-bg-color;
 //
 
 // Borders
-$chat-container-message-input-border-top: solid 1px $default-border-color !default;
+$chat-container-message-input-border-top: solid 0px $default-border-color !default;
 $chat-container-message-input-border-right: solid 0px $default-border-color !default;
 $chat-container-message-input-border-bottom: solid 0px $default-border-color !default;
 $chat-container-message-input-border-left: solid 0px $default-border-color !default;
@@ -497,11 +498,11 @@ $message-sent-time-bg-color: transparent !default;
 $message-content-color: $color-text !default;
 $message-content-bg-color: $color-primary !default;
 
-$message-content-incoming-color: $color-text !default;
-$message-content-incoming-bg-color: $message-content-bg-color !default;
-
-$message-content-outgoing-color: $color-text !default;
+$message-content-outgoing-color: $color-white !default;
 $message-content-outgoing-bg-color: $color-primary-dark !default;
+
+$message-content-incoming-color: $color-black !default;
+$message-content-incoming-bg-color: $color-primary-light !default;
 
 // Fonts
 $message-font-size: 1em !default;
@@ -607,9 +608,10 @@ $message-input-content-editor-border-left: $message-input-content-editor-border-
 // Colors
 $message-input-bg-color: $default-bg-color !default;
 $message-input-content-editor-color: $color-text !default;
-$message-input-content-editor-wrapper-bg-color: $color-primary !default;
+$message-input-content-editor-wrapper-bg-color: $color-white !default;
 $message-input-content-editor-container-bg-color: $message-input-content-editor-wrapper-bg-color !default;
 $message-input-content-editor-bg-color: $message-input-content-editor-wrapper-bg-color !default;
+$message-input-content-editor-border: 1px solid rgba($color-black, 1);
 $message-input-content-editor-disabled-color: $color-text-medium !default;
 $message-input-content-editor-disabled-bg-color: rgba($message-input-content-editor-bg-color, 0.38) !default;
 

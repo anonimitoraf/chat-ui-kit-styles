@@ -43,6 +43,7 @@ $_message-input-content-editor-container-max-height: $message-input-max-lines * 
     background-color: $message-input-content-editor-wrapper-bg-color;
     margin: $message-input-content-editor-wrapper-margin;
     padding: $message-input-content-editor-wrapper-padding;
+    border: $message-input-content-editor-border;
     border-radius: $message-input-content-editor-wrapper-border-radius;
     flex-grow:1;
 
