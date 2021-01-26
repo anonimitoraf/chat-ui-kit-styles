@@ -561,10 +561,10 @@ $message-group-footer-color: $color-text-medium !default;
 $message-group-footer-bg-color: transparent !default;
 $message-group-message-content-bg-color: $color-primary !default;
 
-$message-group-message-content-incoming-color: $color-text !default;
-$message-group-message-content-incoming-bg-color: $message-group-message-content-bg-color !default;
+$message-group-message-content-incoming-color: $color-black !default;
+$message-group-message-content-incoming-bg-color: $color-primary-light !default;
 
-$message-group-message-content-outgoing-color: $color-text !default;
+$message-group-message-content-outgoing-color: $color-white !default;
 $message-group-message-content-outgoing-bg-color: $color-primary-dark !default;
 
 // Fonts
